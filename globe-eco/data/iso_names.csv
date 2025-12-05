@@ -1,0 +1,258 @@
+isoA3,name
+ALB,Albania
+DZA,Algeria
+AGO,Angola
+ARG,Argentina
+ARM,Armenia
+AUS,Australia
+AUT,Austria
+AZE,Azerbaijan
+BHR,Bahrain
+BGD,Bangladesh
+BLR,Belarus
+BEL,Belgium
+BEN,Benin
+BOL,Bolivia
+BIH,Bosnia and Herzegovina
+BWA,Botswana
+BRA,Brazil
+BRN,Brunei Darussalam
+BGR,Bulgaria
+CMR,Cameroon
+CAN,Canada
+CHL,Chile
+CHN,China
+COL,Colombia
+COD,"Congo, Dem. Rep."
+COG,"Congo, Rep."
+CRI,Costa Rica
+CIV,Cote d'Ivoire
+HRV,Croatia
+CUB,Cuba
+CYP,Cyprus
+CZE,Czechia
+DNK,Denmark
+DOM,Dominican Republic
+ECU,Ecuador
+EGY,"Egypt, Arab Rep."
+SLV,El Salvador
+EST,Estonia
+ETH,Ethiopia
+FIN,Finland
+FRA,France
+GAB,Gabon
+GEO,Georgia
+DEU,Germany
+GHA,Ghana
+GIB,Gibraltar
+GRC,Greece
+GTM,Guatemala
+HTI,Haiti
+HND,Honduras
+HKG,"Hong Kong SAR, China"
+HUN,Hungary
+ISL,Iceland
+IND,India
+IDN,Indonesia
+IRN,"Iran, Islamic Rep."
+IRQ,Iraq
+IRL,Ireland
+ISR,Israel
+ITA,Italy
+JAM,Jamaica
+JPN,Japan
+JOR,Jordan
+KAZ,Kazakhstan
+KEN,Kenya
+PRK,"Korea, Dem. People's Rep."
+KOR,"Korea, Rep."
+KWT,Kuwait
+KGZ,Kyrgyz Republic
+LVA,Latvia
+LBN,Lebanon
+LBY,Libya
+LTU,Lithuania
+LUX,Luxembourg
+MYS,Malaysia
+MLT,Malta
+MUS,Mauritius
+MEX,Mexico
+MDA,Moldova
+MNG,Mongolia
+MAR,Morocco
+MOZ,Mozambique
+MMR,Myanmar
+NPL,Nepal
+NLD,Netherlands
+NZL,New Zealand
+NIC,Nicaragua
+NGA,Nigeria
+MKD,North Macedonia
+NOR,Norway
+OMN,Oman
+PAK,Pakistan
+PAN,Panama
+PRY,Paraguay
+PER,Peru
+PHL,Philippines
+POL,Poland
+PRT,Portugal
+QAT,Qatar
+ROU,Romania
+RUS,Russian Federation
+SAU,Saudi Arabia
+SEN,Senegal
+SRB,Serbia
+SGP,Singapore
+SVK,Slovak Republic
+SVN,Slovenia
+ZAF,South Africa
+ESP,Spain
+LKA,Sri Lanka
+SDN,Sudan
+SWE,Sweden
+CHE,Switzerland
+SYR,Syrian Arab Republic
+TJK,Tajikistan
+TZA,Tanzania
+THA,Thailand
+TGO,Togo
+TTO,Trinidad and Tobago
+TUN,Tunisia
+TUR,Turkiye
+TKM,Turkmenistan
+UKR,Ukraine
+ARE,United Arab Emirates
+GBR,United Kingdom
+USA,United States
+URY,Uruguay
+UZB,Uzbekistan
+VEN,"Venezuela, RB"
+VNM,Viet Nam
+YEM,"Yemen, Rep."
+ZMB,Zambia
+ZWE,Zimbabwe
+AFE,Africa Eastern and Southern
+AFW,Africa Western and Central
+ARB,Arab World
+CSS,Caribbean small states
+CEB,Central Europe and the Baltics
+EAR,Early-demographic dividend
+EAS,East Asia & Pacific
+EAP,East Asia & Pacific (excluding high income)
+TEA,East Asia & Pacific (IDA & IBRD countries)
+EMU,Euro area
+ECS,Europe & Central Asia
+ECA,Europe & Central Asia (excluding high income)
+TEC,Europe & Central Asia (IDA & IBRD countries)
+EUU,European Union
+FCS,Fragile and conflict affected situations
+HPC,Heavily indebted poor countries (HIPC)
+HIC,High income
+IBD,IBRD only
+IBT,IDA & IBRD total
+IDB,IDA blend
+IDX,IDA only
+IDA,IDA total
+LTE,Late-demographic dividend
+LCN,Latin America & Caribbean
+LAC,Latin America & Caribbean (excluding high income)
+TLA,Latin America & the Caribbean (IDA & IBRD countries)
+LDC,Least developed countries: UN classification
+LMY,Low & middle income
+LIC,Low income
+LMC,Lower middle income
+MEA,"Middle East, North Africa, Afghanistan & Pakistan"
+MNA,"Middle East, North Africa, Afghanistan & Pakistan (excluding high income)"
+TMN,"Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)"
+MIC,Middle income
+NAC,North America
+OED,OECD members
+OSS,Other small states
+PST,Post-demographic dividend
+PRE,Pre-demographic dividend
+SST,Small states
+SAS,South Asia
+TSA,South Asia (IDA & IBRD)
+SSF,Sub-Saharan Africa
+SSA,Sub-Saharan Africa (excluding high income)
+TSS,Sub-Saharan Africa (IDA & IBRD countries)
+UMC,Upper middle income
+WLD,World
+AFG,Afghanistan
+ASM,American Samoa
+AND,Andorra
+ATG,Antigua and Barbuda
+ABW,Aruba
+BHS,"Bahamas, The"
+BRB,Barbados
+BLZ,Belize
+BTN,Bhutan
+VGB,British Virgin Islands
+BFA,Burkina Faso
+BDI,Burundi
+CPV,Cabo Verde
+KHM,Cambodia
+CYM,Cayman Islands
+CAF,Central African Republic
+TCD,Chad
+COM,Comoros
+CUW,Curacao
+DJI,Djibouti
+DMA,Dominica
+GNQ,Equatorial Guinea
+ERI,Eritrea
+FRO,Faroe Islands
+FJI,Fiji
+PYF,French Polynesia
+GMB,"Gambia, The"
+GRL,Greenland
+GRD,Grenada
+GUM,Guam
+GIN,Guinea
+GNB,Guinea-Bissau
+GUY,Guyana
+KIR,Kiribati
+XKX,Kosovo
+LSO,Lesotho
+LBR,Liberia
+MDG,Madagascar
+MWI,Malawi
+MDV,Maldives
+MLI,Mali
+MHL,Marshall Islands
+MRT,Mauritania
+FSM,"Micronesia, Fed. Sts."
+NAM,Namibia
+NRU,Nauru
+NCL,New Caledonia
+NER,Niger
+PLW,Palau
+PNG,Papua New Guinea
+PRI,Puerto Rico (US)
+RWA,Rwanda
+WSM,Samoa
+STP,Sao Tome and Principe
+SYC,Seychelles
+SLE,Sierra Leone
+SLB,Solomon Islands
+SOM,Somalia
+KNA,St. Kitts and Nevis
+LCA,St. Lucia
+MAF,St. Martin (French part)
+VCT,St. Vincent and the Grenadines
+TON,Tonga
+TCA,Turks and Caicos Islands
+TUV,Tuvalu
+VUT,Vanuatu
+VIR,Virgin Islands (U.S.)
+PSE,West Bank and Gaza
+PSS,Pacific island small states
+LAO,Lao PDR
+MNE,Montenegro
+SXM,Sint Maarten (Dutch part)
+SSD,South Sudan
+SUR,Suriname
+TLS,Timor-Leste
+UGA,Uganda
+SWZ,Eswatini

@@ -1,0 +1,687 @@
+isoA3,year,rail_passenger_km,name
+ALB,2000,125.0,Albania
+DZA,2000,1142.0,Algeria
+ARM,2000,47.0,Armenia
+AUS,2000,11552.161964256,Australia
+AUT,2000,8206.0,Austria
+AZE,2000,493.0,Azerbaijan
+BGD,2000,3940.7,Bangladesh
+BLR,2000,17722.0,Belarus
+BEL,2000,7755.0,Belgium
+BIH,2000,38.0,Bosnia and Herzegovina
+BWA,2000,75.0,Botswana
+BGR,2000,3472.0,Bulgaria
+KHM,2000,45.4,Cambodia
+CMR,2000,327.1,Cameroon
+CAN,2000,1548.0,Canada
+CHL,2000,736.0,Chile
+CHN,2000,441468.0,China
+COD,2000,188.0,"Congo, Dem. Rep."
+COG,2000,83.9,"Congo, Rep."
+CIV,2000,125.91,Cote d'Ivoire
+HRV,2000,1252.0,Croatia
+CUB,2000,1853.0,Cuba
+CZE,2000,7300.0,Czechia
+DNK,2000,5537.0,Denmark
+DJI,2000,145.0,Djibouti
+EGY,2000,73565.0,"Egypt, Arab Rep."
+EST,2000,263.0,Estonia
+FIN,2000,3405.0,Finland
+FRA,2000,82253.0,France
+GAB,2000,94.0,Gabon
+GEO,2000,453.0,Georgia
+DEU,2000,75404.0,Germany
+GHA,2000,83.0,Ghana
+GRC,2000,1628.0,Greece
+HUN,2000,9693.0,Hungary
+IND,2000,430666.0,India
+IDN,2000,19228.0,Indonesia
+IRN,2000,7119.0,"Iran, Islamic Rep."
+IRQ,2000,379.0,Iraq
+IRL,2000,1389.0,Ireland
+ISR,2000,781.5,Israel
+ITA,2000,47133.0,Italy
+JPN,2000,384287.0,Japan
+KEN,2000,158.7,Kenya
+KOR,2000,49558.0,"Korea, Rep."
+KGZ,2000,44.0,Kyrgyz Republic
+LVA,2000,715.0,Latvia
+LTU,2000,611.0,Lithuania
+LUX,2000,332.0,Luxembourg
+MDG,2000,24.0,Madagascar
+MYS,2000,1220.0,Malaysia
+MLI,2000,201.4,Mali
+MEX,2000,82.0,Mexico
+MDA,2000,315.0,Moldova
+MNG,2000,1070.0,Mongolia
+MAR,2000,1956.0,Morocco
+MOZ,2000,142.0,Mozambique
+MMR,2000,4451.0,Myanmar
+NLD,2000,15400.0,Netherlands
+MKD,2000,176.0,North Macedonia
+NOR,2000,3353.0,Norway
+PAK,2000,18495.0,Pakistan
+PHL,2000,123.0,Philippines
+POL,2000,24092.0,Poland
+PRT,2000,3834.0,Portugal
+ROU,2000,11632.0,Romania
+RUS,2000,167054.0,Russian Federation
+SAU,2000,288.0,Saudi Arabia
+SEN,2000,138.0,Senegal
+SRB,2000,1236.0,Serbia
+SVK,2000,2870.0,Slovak Republic
+SVN,2000,705.0,Slovenia
+ZAF,2000,11890.0,South Africa
+ESP,2000,20144.0,Spain
+LKA,2000,3208.0,Sri Lanka
+SDN,2000,205.0,Sudan
+SWE,2000,8243.0,Sweden
+CHE,2000,12620.0,Switzerland
+SYR,2000,196.0,Syrian Arab Republic
+TJK,2000,73.0,Tajikistan
+TZA,2000,428.0,Tanzania
+THA,2000,9935.0,Thailand
+TUN,2000,1257.0,Tunisia
+TUR,2000,5832.0,Turkiye
+TKM,2000,943.0,Turkmenistan
+UKR,2000,51767.0,Ukraine
+GBR,2000,46506.213654,United Kingdom
+USA,2000,25977.28144892,United States
+URY,2000,9.0,Uruguay
+UZB,2000,2163.0,Uzbekistan
+VNM,2000,3200.0,Viet Nam
+CEB,2000,2870.0,Central Europe and the Baltics
+EAS,2000,9935.0,East Asia & Pacific
+EAP,2000,3200.0,East Asia & Pacific (excluding high income)
+TEA,2000,3200.0,East Asia & Pacific (IDA & IBRD countries)
+EMU,2000,3405.0,Euro area
+ECS,2000,3405.0,Europe & Central Asia
+ECA,2000,453.0,Europe & Central Asia (excluding high income)
+TEC,2000,1089.5,Europe & Central Asia (IDA & IBRD countries)
+EUU,2000,6418.5,European Union
+HIC,2000,7527.5,High income
+IBD,2000,1236.0,IBRD only
+IBT,2000,614.5,IDA & IBRD total
+IDB,2000,242.9,IDA blend
+LTE,2000,1220.0,Late-demographic dividend
+LMY,2000,440.5,Low & middle income
+LMC,2000,428.0,Lower middle income
+MEA,2000,1199.5,"Middle East, North Africa, Afghanistan & Pakistan"
+MNA,2000,1606.5,"Middle East, North Africa, Afghanistan & Pakistan (excluding high income)"
+TMN,2000,1606.5,"Middle East, North Africa, Afghanistan & Pakistan (IDA & IBRD)"
+MIC,2000,1006.5,Middle income
+NAC,2000,13762.64072446,North America
+OED,2000,7300.0,OECD members
+PST,2000,8224.5,Post-demographic dividend
+SAS,2000,3940.7,South Asia
+TSA,2000,3940.7,South Asia (IDA & IBRD)
+UMC,2000,1070.0,Upper middle income
+WLD,2000,1588.0,World
+ALB,2015,6.99,Albania
+DZA,2015,1269.0,Algeria
+ARG,2015,6883.5652307941,Argentina
+ARM,2015,44.0,Armenia
+AUS,2015,16016.860652115,Australia
+AUT,2015,12208.0,Austria
+AZE,2015,495.0,Azerbaijan
+BGD,2015,8711.0,Bangladesh
+BLR,2015,7117.0,Belarus
+BEL,2015,10333.0,Belgium
+BIH,2015,34.0,Bosnia and Herzegovina
+BRA,2015,15877.0,Brazil
+BGR,2015,1552.0,Bulgaria
+CAN,2015,1349.0,Canada
+CHL,2015,584.365975,Chile
+CHN,2015,1109312.0,China
+COD,2015,16.7,"Congo, Dem. Rep."
+HRV,2015,951.0,Croatia
+CZE,2015,8298.112592,Czechia
+DNK,2015,6808.0,Denmark
+EST,2015,289.0,Estonia
+FIN,2015,4113.0,Finland
+FRA,2015,104849.0,France
+GAB,2015,112.0,Gabon
+GEO,2015,464.6,Georgia
+DEU,2015,91603.0,Germany
+GRC,2015,1263.0,Greece
+HUN,2015,7609.161,Hungary
+IND,2015,1147190.0,India
+IDN,2015,22296.0,Indonesia
+IRN,2015,14938.0,"Iran, Islamic Rep."
+IRL,2015,1917.0,Ireland
+ISR,2015,2608.1,Israel
+ITA,2015,52207.0,Italy
+JPN,2015,427486.0,Japan
+KAZ,2015,21614.8,Kazakhstan
+KOR,2015,68371.0,"Korea, Rep."
+KGZ,2015,41.0,Kyrgyz Republic
+LVA,2015,591.0,Latvia
+LTU,2015,361.0,Lithuania
+LUX,2015,418.0,Luxembourg
+MYS,2015,1964.330166,Malaysia
+MEX,2015,1411.0,Mexico
+MDA,2015,181.0,Moldova
+MNG,2015,996.74,Mongolia
+MNE,2015,80.6,Montenegro
+MAR,2015,5507.0,Morocco
+NLD,2015,15800.0,Netherlands
+MKD,2015,178.0,North Macedonia
+NOR,2015,3555.0,Norway
+PAK,2015,20288.0,Pakistan
+PHL,2015,342.0,Philippines
+POL,2015,17367.0,Poland
+PRT,2015,3957.0,Portugal
+ROU,2015,5149.0,Romania
+RUS,2015,120413.0,Russian Federation
+SRB,2015,509.0,Serbia
+SVK,2015,3411.0,Slovak Republic
+SVN,2015,709.0,Slovenia
+ZAF,2015,13704.0,South Africa
+ESP,2015,26142.0,Spain
+LKA,2015,7407.39,Sri Lanka
+SWE,2015,12650.0,Sweden
+CHE,2015,20389.0,Switzerland
+TJK,2015,16.0,Tajikistan
+THA,2015,6181.0,Thailand
+TUN,2015,1246.0,Tunisia
+TUR,2015,8326.0,Turkiye
+TKM,2015,2326.0,Turkmenistan
+UKR,2015,35367.0,Ukraine
+GBR,2015,76060.135,United Kingdom
+USA,2015,36043.875681391,United States
+URY,2015,8.0,Uruguay
+UZB,2015,3758.0,Uzbekistan
+VNM,2015,4233.88,Viet Nam
+CEB,2015,1552.0,Central Europe and the Baltics
+EAS,2015,16016.860652115,East Asia & Pacific
+EAP,2015,4233.88,East Asia & Pacific (excluding high income)
+TEA,2015,4233.88,East Asia & Pacific (IDA & IBRD countries)
+EMU,2015,3957.0,Euro area
+ECS,2015,3857.5,Europe & Central Asia
+ECA,2015,479.8,Europe & Central Asia (excluding high income)
+TEC,2015,951.0,Europe & Central Asia (IDA & IBRD countries)
+EUU,2015,5978.5,European Union
+HIC,2015,7609.161,High income
+IBD,2015,1964.330166,IBRD only
+LTE,2015,1246.0,Late-demographic dividend
+NAC,2015,18696.4378406955,North America
+OED,2015,8298.112592,OECD members
+PST,2015,10333.0,Post-demographic dividend
+SAS,2015,8711.0,South Asia
+TSA,2015,8711.0,South Asia (IDA & IBRD)
+UMC,2015,1964.330166,Upper middle income
+ALB,2016,3.2,Albania
+DZA,2016,1337.0,Algeria
+ARG,2016,8065.3684635781,Argentina
+ARM,2016,50.0,Armenia
+AUS,2016,16503.758569102,Australia
+AUT,2016,12578.0,Austria
+AZE,2016,448.0,Azerbaijan
+BGD,2016,10040.0,Bangladesh
+BLR,2016,6428.0,Belarus
+BEL,2016,10025.0,Belgium
+BIH,2016,24.0,Bosnia and Herzegovina
+BRA,2016,15648.0,Brazil
+BGR,2016,1458.0,Bulgaria
+CAN,2016,1408.0,Canada
+CHL,2016,582.860352,Chile
+CHN,2016,1160059.0,China
+COD,2016,28.397202,"Congo, Dem. Rep."
+HRV,2016,836.0,Croatia
+CZE,2016,8843.373268,Czechia
+DNK,2016,6653.0,Denmark
+EST,2016,316.0,Estonia
+FIN,2016,3868.0,Finland
+FRA,2016,104207.0,France
+GAB,2016,127.0,Gabon
+GEO,2016,544.5,Georgia
+DEU,2016,94197.0,Germany
+GRC,2016,1192.0,Greece
+HUN,2016,7653.455,Hungary
+IND,2016,1143039.0,India
+IDN,2016,21636.0,Indonesia
+IRN,2016,12982.0,"Iran, Islamic Rep."
+IRL,2016,1990.0,Ireland
+ISR,2016,2644.7,Israel
+ITA,2016,52178.0,Italy
+JPN,2016,431799.0,Japan
+KAZ,2016,17321.8,Kazakhstan
+KOR,2016,86871.0,"Korea, Rep."
+KGZ,2016,40.8,Kyrgyz Republic
+LVA,2016,584.0,Latvia
+LTU,2016,396.0,Lithuania
+LUX,2016,418.0,Luxembourg
+MYS,2016,2344.190264,Malaysia
+MEX,2016,1481.0,Mexico
+MDA,2016,122.0,Moldova
+MNG,2016,956.0,Mongolia
+MNE,2016,83.9,Montenegro
+MAR,2016,5208.0,Morocco
+NLD,2016,16900.0,Netherlands
+MKD,2016,83.0,North Macedonia
+NOR,2016,3695.0,Norway
+PAK,2016,21201.0,Pakistan
+PHL,2016,384.0,Philippines
+POL,2016,19175.0,Poland
+PRT,2016,4146.0,Portugal
+ROU,2016,4988.0,Romania
+RUS,2016,124461.0,Russian Federation
+SRB,2016,438.0,Serbia
+SVK,2016,3595.0,Slovak Republic
+SVN,2016,680.0,Slovenia
+ZAF,2016,11837.0,South Africa
+ESP,2016,26670.0,Spain
+SWE,2016,12800.0,Sweden
+CHE,2016,20812.0,Switzerland
+TJK,2016,18.4,Tajikistan
+TUN,2016,1235.0,Tunisia
+TUR,2016,7829.0,Turkiye
+TKM,2016,2336.0,Turkmenistan
+UKR,2016,36839.0,Ukraine
+GBR,2016,78228.912,United Kingdom
+USA,2016,35892.157355569,United States
+UZB,2016,3934.0,Uzbekistan
+VNM,2016,3416.0,Viet Nam
+CEB,2016,1458.0,Central Europe and the Baltics
+TEA,2016,2880.095132,East Asia & Pacific (IDA & IBRD countries)
+EMU,2016,3868.0,Euro area
+ECS,2016,3901.0,Europe & Central Asia
+ECA,2016,443.0,Europe & Central Asia (excluding high income)
+TEC,2016,836.0,Europe & Central Asia (IDA & IBRD countries)
+EUU,2016,5820.5,European Union
+HIC,2016,7653.455,High income
+IBD,2016,2336.0,IBRD only
+LTE,2016,1095.5,Late-demographic dividend
+NAC,2016,18650.0786777845,North America
+OED,2016,7829.0,OECD members
+PST,2016,10025.0,Post-demographic dividend
+SAS,2016,576539.5,South Asia
+TSA,2016,576539.5,South Asia (IDA & IBRD)
+UMC,2016,1908.5,Upper middle income
+ALB,2017,2.4,Albania
+DZA,2017,1550.0,Algeria
+ARG,2017,8360.7820221858,Argentina
+ARM,2017,55.0,Armenia
+AUS,2017,17039.193726877,Australia
+AUT,2017,12656.7,Austria
+AZE,2017,467.0,Azerbaijan
+BLR,2017,6295.0,Belarus
+BEL,2017,10167.0,Belgium
+BIH,2017,30.0,Bosnia and Herzegovina
+BRA,2017,15807.0,Brazil
+BGR,2017,1438.0,Bulgaria
+CMR,2017,262.124,Cameroon
+CAN,2017,1534.0,Canada
+CHL,2017,846.13,Chile
+CHN,2017,1266681.0,China
+COD,2017,22.724,"Congo, Dem. Rep."
+HRV,2017,745.0,Croatia
+CZE,2017,9497.566454,Czechia
+DNK,2017,6623.0,Denmark
+EST,2017,367.0,Estonia
+FIN,2017,4271.0,Finland
+FRA,2017,110568.0,France
+GAB,2017,174.0,Gabon
+GEO,2017,596.7,Georgia
+DEU,2017,95530.0,Germany
+GRC,2017,1109.0,Greece
+HUN,2017,7730.982,Hungary
+IND,2017,1149835.0,India
+IDN,2017,15558.0,Indonesia
+IRN,2017,13270.0,"Iran, Islamic Rep."
+IRL,2017,2121.0,Ireland
+ISR,2017,2765.2,Israel
+ITA,2017,53231.0,Italy
+JPN,2017,437363.0,Japan
+KAZ,2017,17961.5,Kazakhstan
+KOR,2017,89964.0,"Korea, Rep."
+KGZ,2017,43.0,Kyrgyz Republic
+LVA,2017,596.0,Latvia
+LTU,2017,424.0,Lithuania
+LUX,2017,438.0,Luxembourg
+MYS,2017,2468.088213,Malaysia
+MEX,2017,1550.0,Mexico
+MDA,2017,99.0,Moldova
+MNG,2017,973.0,Mongolia
+MNE,2017,59.9,Montenegro
+MAR,2017,4923.0,Morocco
+NLD,2017,17800.0,Netherlands
+NZL,2017,544.54,New Zealand
+MKD,2017,59.0,North Macedonia
+NOR,2017,3584.0,Norway
+PAK,2017,22476.0,Pakistan
+POL,2017,20319.0,Poland
+PRT,2017,4391.0,Portugal
+ROU,2017,5663.0,Romania
+RUS,2017,122920.0,Russian Federation
+SAU,2017,49.67,Saudi Arabia
+SRB,2017,377.0,Serbia
+SVK,2017,3873.0,Slovak Republic
+SVN,2017,650.0,Slovenia
+ZAF,2017,9821.328,South Africa
+ESP,2017,27487.0,Spain
+SWE,2017,13331.0,Sweden
+CHE,2017,20864.5,Switzerland
+TJK,2017,28.0,Tajikistan
+THA,2017,6020.0,Thailand
+TUN,2017,1164.0,Tunisia
+TUR,2017,8465.0,Turkiye
+TKM,2017,2340.0,Turkmenistan
+UKR,2017,28075.0,Ukraine
+GBR,2017,79496.193,United Kingdom
+USA,2017,33256.0,United States
+UZB,2017,4294.0,Uzbekistan
+VNM,2017,3657.0,Viet Nam
+ZMB,2017,4.268,Zambia
+CEB,2017,1438.0,Central Europe and the Baltics
+EAS,2017,10789.0,East Asia & Pacific
+TEA,2017,4838.5,East Asia & Pacific (IDA & IBRD countries)
+EMU,2017,4271.0,Euro area
+ECS,2017,4282.5,Europe & Central Asia
+ECA,2017,422.0,Europe & Central Asia (excluding high income)
+TEC,2017,745.0,Europe & Central Asia (IDA & IBRD countries)
+EUU,2017,6143.0,European Union
+HIC,2017,6623.0,High income
+IBD,2017,2468.088213,IBRD only
+LTE,2017,1164.0,Late-demographic dividend
+NAC,2017,17395.0,North America
+OED,2017,8097.991,OECD members
+PST,2017,9832.283227,Post-demographic dividend
+UMC,2017,2340.0,Upper middle income
+ALB,2018,2.7,Albania
+DZA,2018,1602.0,Algeria
+AUS,2018,18020.934471189,Australia
+AUT,2018,13204.7,Austria
+AZE,2018,466.0,Azerbaijan
+BLR,2018,6215.3,Belarus
+BEL,2018,10500.0,Belgium
+BIH,2018,40.0,Bosnia and Herzegovina
+BRA,2018,16422.0,Brazil
+BGR,2018,1479.0,Bulgaria
+CMR,2018,256.872,Cameroon
+CAN,2018,1530.0,Canada
+CHL,2018,973.0,Chile
+CHN,2018,1361715.0,China
+COD,2018,29.514,"Congo, Dem. Rep."
+HRV,2018,756.0,Croatia
+CZE,2018,10286.019,Czechia
+DNK,2018,6560.0,Denmark
+EST,2018,417.0,Estonia
+FIN,2018,4534.0,Finland
+FRA,2018,107958.0,France
+GAB,2018,176.330295,Gabon
+GEO,2018,633.6,Georgia
+DEU,2018,98170.0,Germany
+GRC,2018,1104.0,Greece
+HUN,2018,7769.56,Hungary
+IND,2018,1177699.0,India
+IDN,2018,16932.0,Indonesia
+IRN,2018,15239.0,"Iran, Islamic Rep."
+IRL,2018,2281.0,Ireland
+ISR,2018,3031.76,Israel
+ITA,2018,55493.0,Italy
+JPN,2018,441614.0,Japan
+KAZ,2018,18509.5,Kazakhstan
+KOR,2018,92193.0,"Korea, Rep."
+KGZ,2018,35.0,Kyrgyz Republic
+LVA,2018,624.0,Latvia
+LTU,2018,468.0,Lithuania
+LUX,2018,442.0,Luxembourg
+MYS,2018,2317.063326,Malaysia
+MEX,2018,1591.0,Mexico
+MDA,2018,94.6,Moldova
+MNE,2018,66.7,Montenegro
+MAR,2018,4475.0,Morocco
+NLD,2018,22600.0,Netherlands
+NZL,2018,743.27,New Zealand
+MKD,2018,64.0,North Macedonia
+NOR,2018,3722.0,Norway
+PAK,2018,24903.0,Pakistan
+POL,2018,21043.0,Poland
+PRT,2018,4487.0,Portugal
+ROU,2018,5577.0,Romania
+RUS,2018,129370.701,Russian Federation
+SAU,2018,134.65,Saudi Arabia
+SRB,2018,347.0,Serbia
+SVK,2018,3915.0,Slovak Republic
+SVN,2018,656.0,Slovenia
+ZAF,2018,7113.744,South Africa
+ESP,2018,28434.0,Spain
+SWE,2018,13546.798247255,Sweden
+CHE,2018,20613.0,Switzerland
+TJK,2018,33.0,Tajikistan
+TUN,2018,1109.0,Tunisia
+TUR,2018,8938.0,Turkiye
+UKR,2018,28685.0,Ukraine
+GBR,2018,80980.168,United Kingdom
+USA,2018,31963.0,United States
+UZB,2018,4329.0,Uzbekistan
+VNM,2018,3542.0,Viet Nam
+ZMB,2018,4.185,Zambia
+ZWE,2018,98.0,Zimbabwe
+CEB,2018,1479.0,Central Europe and the Baltics
+EMU,2018,4487.0,Euro area
+ECS,2018,4510.5,Europe & Central Asia
+ECA,2018,406.5,Europe & Central Asia (excluding high income)
+TEC,2018,756.0,Europe & Central Asia (IDA & IBRD countries)
+EUU,2018,6068.5,European Union
+HIC,2018,6560.0,High income
+IBD,2018,2929.531663,IBRD only
+LTE,2018,1695.0,Late-demographic dividend
+NAC,2018,16746.5,North America
+OED,2018,8353.78,OECD members
+PST,2018,10393.0095,Post-demographic dividend
+UMC,2018,1959.531663,Upper middle income
+ALB,2019,2.0,Albania
+DZA,2019,1454.0,Algeria
+AUS,2019,18841.831667914,Australia
+AUT,2019,13350.0,Austria
+AZE,2019,544.0,Azerbaijan
+BLR,2019,6274.1,Belarus
+BEL,2019,10849.0,Belgium
+BIH,2019,55.5,Bosnia and Herzegovina
+BRA,2019,16486.36,Brazil
+BGR,2019,1523.8,Bulgaria
+CMR,2019,254.555,Cameroon
+CAN,2019,1731.0,Canada
+CHL,2019,1063.0,Chile
+CHN,2019,1438606.0,China
+COD,2019,27.368,"Congo, Dem. Rep."
+HRV,2019,734.0,Croatia
+CZE,2019,10930.618,Czechia
+EST,2019,392.0,Estonia
+FIN,2019,4924.0,Finland
+FRA,2019,112384.0,France
+GAB,2019,171.279327,Gabon
+GEO,2019,676.644,Georgia
+DEU,2019,102026.0,Germany
+GRC,2019,1252.0,Greece
+HUN,2019,7751.606,Hungary
+IND,2019,1157174.0,India
+IDN,2019,29066.0,Indonesia
+IRN,2019,14875.0,"Iran, Islamic Rep."
+IRL,2019,2399.0,Ireland
+ISR,2019,3579.9,Israel
+ITA,2019,56586.0,Italy
+JPN,2019,435063.0,Japan
+KAZ,2019,17700.0,Kazakhstan
+KOR,2019,100381.0,"Korea, Rep."
+KGZ,2019,37.1,Kyrgyz Republic
+LVA,2019,643.0,Latvia
+LTU,2019,479.0,Lithuania
+LUX,2019,463.0,Luxembourg
+MYS,2019,2200.050277,Malaysia
+MEX,2019,1571.0,Mexico
+MDA,2019,74.1,Moldova
+MNG,2019,1112.0,Mongolia
+MNE,2019,66.5,Montenegro
+MAR,2019,4803.0,Morocco
+NLD,2019,19400.0,Netherlands
+NZL,2019,776.56,New Zealand
+MKD,2019,62.0,North Macedonia
+NOR,2019,3715.0,Norway
+POL,2019,22056.0,Poland
+PRT,2019,4964.014,Portugal
+ROU,2019,5906.0,Romania
+RUS,2019,133380.866,Russian Federation
+SRB,2019,285.0,Serbia
+SVK,2019,4093.0,Slovak Republic
+SVN,2019,698.0,Slovenia
+ZAF,2019,5504.426,South Africa
+ESP,2019,28835.0,Spain
+SWE,2019,14617.207234121,Sweden
+CHE,2019,21737.0,Switzerland
+TJK,2019,28.1,Tajikistan
+TUN,2019,1023.0,Tunisia
+TUR,2019,14259.0,Turkiye
+UKR,2019,28413.0,Ukraine
+GBR,2019,82550.430261516,United Kingdom
+USA,2019,32483.0,United States
+UZB,2019,4385.0,Uzbekistan
+VNM,2019,3185.0,Viet Nam
+ZWE,2019,206.0,Zimbabwe
+CEB,2019,1523.8,Central Europe and the Baltics
+EMU,2019,4924.0,Euro area
+ECS,2019,4924.0,Europe & Central Asia
+ECA,2019,414.5,Europe & Central Asia (excluding high income)
+TEC,2019,734.0,Europe & Central Asia (IDA & IBRD countries)
+EUU,2019,5906.0,European Union
+HIC,2019,7751.606,High income
+IBD,2019,2200.050277,IBRD only
+LTE,2019,1112.0,Late-demographic dividend
+NAC,2019,17107.0,North America
+OED,2019,10849.0,OECD members
+PST,2019,10930.618,Post-demographic dividend
+UMC,2019,1571.0,Upper middle income
+ALB,2020,0.593,Albania
+DZA,2020,348.0,Algeria
+AUS,2020,15053.004083646,Australia
+AUT,2020,7417.005,Austria
+AZE,2020,172.0,Azerbaijan
+BLR,2020,3741.1,Belarus
+BEL,2020,7397.0,Belgium
+BIH,2020,15.0,Bosnia and Herzegovina
+BGR,2020,1119.0,Bulgaria
+CMR,2020,225.373,Cameroon
+CAN,2020,229.0,Canada
+CHL,2020,517.0,Chile
+CHN,2020,328251.0,China
+COD,2020,5.359,"Congo, Dem. Rep."
+HRV,2020,449.0,Croatia
+CZE,2020,6665.141,Czechia
+EST,2020,263.0,Estonia
+FIN,2020,2820.0,Finland
+FRA,2020,64859.0,France
+GAB,2020,87.0,Gabon
+GEO,2020,246.938,Georgia
+DEU,2020,58822.0,Germany
+GRC,2020,640.0,Greece
+HUN,2020,4854.225,Hungary
+IND,2020,1050738.0,India
+IRN,2020,5170.0,"Iran, Islamic Rep."
+IRL,2020,834.0,Ireland
+ISR,2020,1252.9,Israel
+ITA,2020,22269.0,Italy
+JPN,2020,263211.0,Japan
+KAZ,2020,8649.3,Kazakhstan
+KGZ,2020,6.8,Kyrgyz Republic
+LVA,2020,413.0,Latvia
+LTU,2020,260.0,Lithuania
+LUX,2020,269.0,Luxembourg
+MYS,2020,929.341054,Malaysia
+MEX,2020,523.0,Mexico
+MDA,2020,29.19,Moldova
+MNG,2020,580.0,Mongolia
+MNE,2020,27.8,Montenegro
+MAR,2020,2409.0,Morocco
+NLD,2020,9200.0,Netherlands
+NZL,2020,802.03456282044,New Zealand
+MKD,2020,25.0,North Macedonia
+NOR,2020,1804.0,Norway
+POL,2020,12487.0,Poland
+PRT,2020,2552.0,Portugal
+RUS,2020,78134.699,Russian Federation
+SRB,2020,157.0,Serbia
+SVK,2020,2180.0,Slovak Republic
+SVN,2020,397.0,Slovenia
+ZAF,2020,3501.96,South Africa
+ESP,2020,11998.51,Spain
+SWE,2020,8129.0,Sweden
+CHE,2020,13334.0,Switzerland
+TJK,2020,21.7,Tajikistan
+TUN,2020,581.226,Tunisia
+TUR,2020,8297.0,Turkiye
+UKR,2020,10696.0,Ukraine
+GBR,2020,24188.466688403,United Kingdom
+USA,2020,12460.0,United States
+UZB,2020,1795.0,Uzbekistan
+VNM,2020,1516.0,Viet Nam
+ZWE,2020,17.0,Zimbabwe
+CEB,2020,784.0,Central Europe and the Baltics
+EMU,2020,2552.0,Euro area
+ECS,2020,2366.0,Europe & Central Asia
+ECA,2020,164.5,Europe & Central Asia (excluding high income)
+TEC,2020,347.969,Europe & Central Asia (IDA & IBRD countries)
+EUU,2020,3837.1125,European Union
+HIC,2020,4854.225,High income
+LTE,2020,580.0,Late-demographic dividend
+NAC,2020,6344.5,North America
+OED,2020,5759.683,OECD members
+PST,2020,7031.0705,Post-demographic dividend
+ALB,2021,0.812,Albania
+AUS,2021,9327.6307951394,Australia
+AUT,2021,8433.154238,Austria
+AZE,2021,104.0,Azerbaijan
+BLR,2021,4485.5,Belarus
+BEL,2021,6970.0,Belgium
+BGR,2021,1205.0,Bulgaria
+CAN,2021,536.0,Canada
+CHL,2021,738.0,Chile
+CHN,2021,946499.0,China
+COD,2021,7.24727,"Congo, Dem. Rep."
+HRV,2021,540.0,Croatia
+CZE,2021,6820.176,Czechia
+EST,2021,290.0,Estonia
+FIN,2021,2903.0,Finland
+FRA,2021,86853.0,France
+GEO,2021,273.268,Georgia
+GRC,2021,653.0,Greece
+HUN,2021,5435.389,Hungary
+IND,2021,231126.0,India
+IRN,2021,11231.0,"Iran, Islamic Rep."
+IRL,2021,870.0,Ireland
+ISR,2021,1956.0,Israel
+ITA,2021,27693.0,Italy
+KGZ,2021,21.0,Kyrgyz Republic
+LVA,2021,360.8,Latvia
+LTU,2021,329.0,Lithuania
+LUX,2021,304.0,Luxembourg
+MEX,2021,466.0,Mexico
+MDA,2021,23.3,Moldova
+MNG,2021,91.0,Mongolia
+MAR,2021,4464.0,Morocco
+NLD,2021,10900.0,Netherlands
+MKD,2021,25.348251,North Macedonia
+NOR,2021,1780.0,Norway
+POL,2021,15844.0,Poland
+PRT,2021,2912.0,Portugal
+RUS,2021,103447.0,Russian Federation
+SRB,2021,191.0,Serbia
+SVK,2021,2052.0,Slovak Republic
+SVN,2021,542.0,Slovenia
+ESP,2021,17002.0,Spain
+SWE,2021,8008.0,Sweden
+CHE,2021,14308.0,Switzerland
+TUN,2021,633.332,Tunisia
+TUR,2021,10683.0,Turkiye
+UZB,2021,3130.0,Uzbekistan
+CEB,2021,873.5,Central Europe and the Baltics
+EMU,2021,2477.5,Euro area
+ECS,2021,2477.5,Europe & Central Asia
+ECA,2021,147.5,Europe & Central Asia (excluding high income)
+TEC,2021,406.634,Europe & Central Asia (IDA & IBRD countries)
+EUU,2021,2912.0,European Union
+HIC,2021,2907.5,High income
+NAC,2021,536.0,North America
+OED,2021,2912.0,OECD members
+PST,2021,5435.389,Post-demographic dividend

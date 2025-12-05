@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Eco Travel Globe</title>
+
+  <!-- D3 global -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+
+  <!-- Fondo estrellado -->
+  <div class="stars"></div>
+
+  <!-- HEADER / NAVBAR EARTHLY -->
+  <header class="top-bar">
+    <!-- Marca izquierda -->
+    <div class="top-bar__brand">
+      <div class="brand-title">EARTHLY</div>
+      <div class="brand-subtitle">Explore the world responsibly</div>
+    </div>
+
+    <!-- NAV DESKTOP -->
+    <nav class="top-bar__nav">
+      <a href="#" class="nav-link">Profile</a>
+      <a href="#" class="nav-link">Settings</a>
+      <a href="#" class="nav-link">About Us</a>
+      <a href="#" class="nav-link">Help/FAQ</a>
+      <a href="#" class="nav-link">Sign up</a>
+    </nav>
+
+    <!-- Avatar (solo desktop) -->
+    <div class="top-bar__user">
+      <div class="user-avatar">
+        <img src="img/User.jpg" alt="User avatar">
+      </div>
+    </div>
+
+    <!-- HAMBURGUESA (solo mobile) -->
+    <button class="top-bar__burger" id="burger-btn" type="button" aria-label="Toggle menu">
+      <span class="top-bar__burger-line"></span>
+    </button>
+  </header>
+
+  <!-- MENÚ LATERAL MOBILE -->
+  <div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu__top">
+    <div class="mobile-menu__avatar">
+      <img src="img/User.jpg" alt="User avatar">
+    </div>
+
+    <!-- HAMBURGUESA DENTRO DEL MENÚ -->
+    <button class="mobile-menu__burger" type="button" aria-label="Toggle menu">
+      <span class="top-bar__burger-line"></span>
+    </button>
+  </div>
+
+  <ul class="mobile-menu__list">
+    <li><a href="#">Profile</a></li>
+    <li><a href="#">Settings</a></li>
+    <li><a href="#">About Us</a></li>
+    <li><a href="#">Help/FAQ</a></li>
+    <li><a href="#">Sign up</a></li>
+  </ul>
+</div>
+
+  <!-- LAYOUT PRINCIPAL DOS COLUMNAS -->
+  <main class="layout">
+
+    <!-- OVERVIEW + BACK BUTTON -->
+    <section id="overview" class="panel overview">
+  <div class="overview-header">
+    <button class="overview-back" type="button" onclick="history.back()">
+      <svg class="overview-back-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <!-- flecha tipo "<" -->
+        <polyline points="14 6 8 12 14 18" />
+      </svg>
+    </button>
+
+    <div class="overview-text">
+      <h1 class="overview-title">Eco Teavel Globe Overview</h1>
+      <p class="overview-subtitle">
+        Real-time data on environmental performance around the world
+      </p>
+    </div>
+  </div>
+</section>
+
+    <!-- GLOBO (columna izquierda, fila 2) -->
+    <section id="globe" class="globe-panel"></section>
+
+    <!-- PROCESS SUMMARY -->
+    <div class="process-summary">
+      <h2 class="process-title">Process summary</h2>
+      <p class="process-text">
+        • ETL in Python → data cleaning &amp; integration<br/>
+        • Index Calculation → normalized weighted scores<br/>
+        • Visualization in D3.js → color scale, interactivity<br/>
+        • Final Output → interactive globe + top 10 nations
+      </p>
+    </div>
+    <!-- ECO SCORE FORMULA (columna izquierda, fila 3) -->
+    <section id="eco-formula">
+      <h2 class="eco-formula-title">Eco Score Formula</h2>
+
+      <div class="eco-cards">
+        <!-- Carbon Efficiency -->
+        <article class="eco-card">
+          <div class="eco-card-pill">Key Indicators</div>
+          <h3 class="eco-card-title">Carbon Efficiency</h3>
+          <div class="eco-card-circle">
+            <div class="score-circle" data-pct="28"></div>
+          </div>
+        </article>
+
+        <!-- Eco Score -->
+        <article class="eco-card">
+          <div class="eco-card-pill">Key Indicators</div>
+          <h3 class="eco-card-title">Eco Score</h3>
+          <div class="eco-card-circle">
+            <div class="score-circle" data-pct="22"></div>
+          </div>
+        </article>
+
+        <!-- Renewable Energy -->
+        <article class="eco-card">
+          <div class="eco-card-pill">Key Indicators</div>
+          <h3 class="eco-card-title">Renewable Energy</h3>
+          <div class="eco-card-circle">
+            <div class="score-circle" data-pct="16"></div>
+          </div>
+        </article>
+
+        <!-- Life Expectancy / HDI -->
+        <article class="eco-card">
+          <div class="eco-card-pill">Key Indicators</div>
+          <h3 class="eco-card-title eco-card-title--multiline">
+            Life Expectancy<br/>HDI
+          </h3>
+          <div class="eco-card-circle">
+            <div class="score-circle" data-pct="16"></div>
+          </div>
+        </article>
+
+        <!-- Clean Water -->
+        <article class="eco-card">
+          <div class="eco-card-pill">Key Indicators</div>
+          <h3 class="eco-card-title">Clean Water</h3>
+          <div class="eco-card-circle">
+            <div class="score-circle" data-pct="12"></div>
+          </div>
+        </article>
+
+        <!-- Protected Areas -->
+        <article class="eco-card">
+          <div class="eco-card-pill">Key Indicators</div>
+          <h3 class="eco-card-title">Protected Areas</h3>
+          <div class="eco-card-circle">
+            <div class="score-circle" data-pct="6"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- COLUMNA DERECHA COMPLETA -->
+    <aside class="side-panel">
+
+      <!-- GLOBAL INSIGHTS + RANKING -->
+      <section class="panel insights-panel">
+        <div class="panel-header-row">
+          <h2 class="panel-title">Global Insights</h2>
+          <span class="panel-chevron" aria-hidden="true"></span>
+        </div>
+
+        <!-- Ranking original -->
+        <section id="ranking">
+          <h3>Top países sustentables</h3>
+          <table id="ranking-table">
+            <thead>
+              <tr>
+                <th>País</th>
+                <th>Score</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </section>
+      </section>
+
+      <!-- ENVIRONMENTAL TRENDS -->
+      <section class="panel trends-panel">
+        <h2 class="panel-title">Environmental Trends</h2>
+        <p class="trends-text">
+          <span class="trend-label">• CO₂ emissions trend:</span>
+          <span class="trend-value trend-value--positive">↓ 8%</span>
+          <span> since 2015<br/></span>
+
+          <span class="trend-label">• Renewable energy growth:</span>
+          <span class="trend-value trend-value--positive">+3.2%</span>
+          <span> per year<br/></span>
+
+          <span class="trend-label">• Access to clean water:</span>
+          <span class="trend-value trend-value--positive">88%</span>
+          <span> of global population<br/></span>
+
+          <span class="trend-label">• Forest coverage:</span>
+          <span class="trend-value trend-value--positive">31%</span>
+          <span> of land area</span>
+        </p>
+      </section>
+
+      <!-- LEYENDA + REFERENCIAS -->
+      <section class="panel legend-panel">
+
+        <h3 class="legend-title">Leyenda</h3>
+        <div id="legend"></div>
+
+        <p class="legend-interpretation">
+          <b>Interpretación:</b> El EcoScore representa un índice compuesto (0 – 1) que evalúa el desempeño sostenible general de cada país, combinando variables ambientales, sociales y de desarrollo humano.
+          El color más claro indica un mejor desempeño global:<br/>
+          • CO₂ per cápita (28 %)<br/>
+          • PM2.5 – calidad del aire (22 %)<br/>
+          • Energía renovable (16 %)<br/>
+          • Agua potable segura (12 %)<br/>
+          • Esperanza de vida (12 %)<br/>
+          • Áreas protegidas (6 %)<br/>
+          • Índice de desarrollo humano (4 %)
+        </p>
+
+        <div class="references">
+          <h4>Referencias</h4>
+          <ul>
+            <li><b>CO₂ pc (t/hab):</b> emisiones anuales de dióxido de carbono por persona. Menor = mejor desempeño ambiental.</li>
+            <li><b>PM2.5 (µg/m³):</b> concentración media anual de partículas finas. Menor = mejor calidad del aire.</li>
+            <li><b>Renovables (%):</b> porcentaje de electricidad generada por fuentes renovables. Mayor = mejor.</li>
+            <li><b>Área protegida (%):</b> proporción del territorio bajo conservación. Mayor = mejor.</li>
+            <li><b>Agua potable (%):</b> población con acceso a agua gestionada de forma segura. Mayor = mejor.</li>
+            <li><b>Esperanza de vida (años):</b> promedio de años esperados al nacer. Mayor = mejor.</li>
+            <li><b>IDH (0–1):</b> índice de desarrollo humano (educación, salud, ingresos). Mayor = mejor.</li>
+            <li><b>Score:</b> índice combinado (0–1) que pondera los indicadores anteriores para representar la sostenibilidad global de cada país.</li>
+          </ul>
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <div id="tooltip"></div>
+
+  <!-- Tu app como módulo -->
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

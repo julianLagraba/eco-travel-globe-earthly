@@ -1,0 +1,1265 @@
+/* -------------------- Tokens -------------------- */
+:root {
+  /* Layout */
+  --gutter: 14px;
+
+  /* Paleta Earthly */
+  --black: #050609;
+  --prussian: #012B4A;
+  --bice: #046DC4;
+  --myrtle: #049AD5;
+  --cadet: #00B4CD;
+  --white: #ffffff;
+
+  /* UI base */
+  --bg-deep: var(--black);
+  --bg-sky:  var(--prussian);
+  --stroke-soft: rgba(255,255,255,.08);
+  --text: var(--white);
+
+  /* Colores mapa */
+  --c1: #0045AD;
+  --c2: #046DC4;
+  --c3: #049AD5;
+  --c4: #00B4CD;
+  --c5: #9CE3FB;
+
+  /* Cards */
+  --radius: 14px;
+
+  /* Tipografía base */
+  --font: Inter, ui-sans-serif, system-ui, Segoe UI, Roboto, Arial;
+
+  /* Gradiente Earthly */
+  --grad-from: #63DFFF;
+  --grad-to:   #0291FF;
+}
+
+/* -------------------- Base -------------------- */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font);
+  color: var(--text);
+  background: transparent;
+  overflow: hidden;
+}
+
+/* -------------------- Fondo estrellado -------------------- */
+.stars {
+  position: fixed; inset: 0; z-index: -1;
+  background: radial-gradient(ellipse at 50% -120px, var(--bg-sky) 0%, var(--bg-deep) 60%, #000 100%);
+  overflow: hidden;
+}
+.stars::before,
+.stars::after {
+  content: ""; position: absolute; inset: 0; background-repeat: repeat;
+}
+.stars::before {
+  background-image:
+    radial-gradient(1px 1px at 14% 22%, #fff, transparent),
+    radial-gradient(1px 1px at 33% 81%, #fff, transparent),
+    radial-gradient(1px 1px at 52% 52%, #fff, transparent),
+    radial-gradient(1px 1px at 71% 31%, #fff, transparent),
+    radial-gradient(1px 1px at 89% 62%, #fff, transparent),
+    radial-gradient(1px 1px at 83% 90%, #fff, transparent),
+    radial-gradient(1px 1px at 21% 61%, #fff, transparent),
+    radial-gradient(1px 1px at 59% 12%, #fff, transparent),
+    radial-gradient(1px 1px at 41% 41%, #fff, transparent);
+  background-size: 220px 220px; opacity: .85;
+  animation: twinkle 11s infinite alternate;
+}
+.stars::after {
+  background-image:
+    radial-gradient(2px 2px at 18% 26%, rgba(255,255,255,.9), transparent),
+    radial-gradient(2px 2px at 36% 66%, rgba(255,255,255,.9), transparent),
+    radial-gradient(2px 2px at 54% 84%, rgba(255,255,255,.9), transparent),
+    radial-gradient(2px 2px at 72% 44%, rgba(255,255,255,.9), transparent),
+    radial-gradient(2px 2px at 94% 16%, rgba(255,255,255,.9), transparent);
+  background-size: 420px 420px; opacity: .6;
+  animation: twinkle 15s infinite alternate;
+}
+@keyframes twinkle { 0%,100% {opacity:.85} 50% {opacity:.35} }
+@media (prefers-reduced-motion: reduce){
+  .stars::before, .stars::after { animation: none }
+}
+
+
+
+/* ============================
+   HEADER (barra superior)
+   ============================ */
+/* ===== NAV DESKTOP (default) ===== */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 40px;
+}
+
+.top-bar__brand {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar__brand .brand-title {
+  font-family: "Poppins", var(--font);
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+}
+
+.top-bar__brand .brand-subtitle {
+  font-family: "Lato", var(--font);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 2px 0 0;
+  color: #fff;
+}
+
+/* enlaces desktop */
+.top-bar__nav {
+  display: flex;
+  gap: 24px;
+}
+
+.top-bar__user {
+  margin-left: 24px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.top-bar__burger {
+  display: none;
+}
+
+
+.mobile-menu {
+  display: none;
+}
+
+.top-bar {
+  position: fixed;
+  top: var(--gutter);
+  left: var(--gutter);
+  right: var(--gutter);
+  height: 72px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 40px;
+}
+
+.top-bar__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand-title {
+  font-family: "Poppins", var(--font);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+}
+
+.brand-subtitle {
+  font-family: "Lato", var(--font);
+  font-size: 13px;
+  font-weight: 400;
+  opacity: .9;
+}
+
+.top-bar__nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-family: "Lato", var(--font);
+  font-size: 16px;
+  margin-left: auto;          
+  margin-right: 24px;
+}
+
+.nav-link {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 400;
+  opacity: 1;
+}
+
+.nav-link:hover {
+  opacity: 1;
+  transform: none;
+}
+
+.top-bar__user {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.user-status {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  background: #2FC855;
+  border-radius: 9999px;
+  box-shadow: 0 0 0 3px rgba(0,0,0,.7);
+}
+
+/* ============================
+   LAYOUT PRINCIPAL
+   ============================ */
+
+.layout {
+  position: relative;
+  max-width: 1800px;
+  height: calc(100vh - (var(--gutter) * 2) - 72px);
+  margin: calc(var(--gutter) + 72px + 24px) auto var(--gutter);
+  padding: 0 60px 32px; 
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.1fr);
+  grid-template-rows: auto auto auto;
+  column-gap: 60px;
+  row-gap: 32px;
+  box-sizing: border-box;
+  
+}
+
+#overview {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.overview-back {
+  display: none;
+}
+
+#eco-formula {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+/* Aside / panel derecho */
+.side-panel {
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ============================
+   CARDS GENERALES
+   ============================ */
+
+.panel {
+  background: rgba(255,255,255,0.06);
+  border-radius: var(--radius);
+  border: 1px solid rgba(99,223,255,0.85);
+  box-shadow:
+    0 0 10px rgba(4, 109, 160, 0.45),
+    inset 0 0 1px rgba(255,255,255,0.1);
+  backdrop-filter: blur(18px);
+  padding: 18px 20px 20px;
+  box-sizing: border-box;
+  
+}
+
+/* ============================
+   OVERVIEW 
+   ============================ */
+
+#overview {
+  background: none;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
+  padding: 0;
+}
+.overview{
+  margin-top: 150px;
+}
+.overview-title {
+  margin: 0 0 10px;
+  text-align: left;
+  color: #fff;
+  font-family: "Poppins", var(--font);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.overview-subtitle {
+  margin: 0 0 24px;
+  color: #fff;
+  font-family: "Lato", var(--font);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.process-summary {
+  margin-top: 100px;
+}
+
+.process-title {
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Lato", var(--font);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.process-text {
+  margin: 0;
+  color: #fff;
+  font-family: "Lato", var(--font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.hero-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-back-btn {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: none; 
+}
+
+.hero-back-icon {
+  display: inline-flex;
+  width: 38px;
+  height: 38px;
+}
+
+.hero-back-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+#eco-formula {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin-top: 18px;
+}
+
+/* ======
+   GLOBO 
+   ======*/
+
+#globe {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -52%);
+  width: 650px;
+  height: 650px;
+  max-width: 650px;
+  max-height: 650px;
+  z-index: 0;
+}
+#globe svg { width: 100%; height: 100%; display: block }
+
+.country.active{
+  filter: drop-shadow(0 0 12px rgba(255,255,255,.35)) brightness(1.08);
+  stroke: #EAF0F7; stroke-width: 1.5px;
+}
+.country { filter: drop-shadow(0 0 1px rgba(0,0,0,.3)); }
+
+/* ============================
+   ECO SCORE FORMULA
+   ============================ */
+
+.eco-formula-title {
+  margin: 0 0 12px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Lato", var(--font);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* SOLO cards, sin contenedor */
+.eco-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  margin-bottom: 100px;
+}
+
+/* Cards Eco Score Formula */
+.eco-card {
+  position: relative;
+  width: 150px;
+  height: 190px;
+  padding: 10px 9px 9px;
+  box-sizing: border-box;
+  border-radius: 9px;
+
+  /*espejo / vidrio */
+  background:
+    linear-gradient(145deg, rgba(255,255,255,0.16), rgba(255,255,255,0.03));
+  border: 1px solid #63DFFF;
+  backdrop-filter: blur(18px);
+  box-shadow:
+    0 18px 26px rgba(0,0,0,.55),
+    0 0 0 1px rgba(255,255,255,.05) inset;
+}
+
+.eco-card-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 8px;
+  border-radius: 84px;
+  border: 1px solid var(--grad-from);
+  font-family: "Lato", var(--font);
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.eco-card-title {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #fff;
+  font-family: "Poppins", var(--font);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.eco-card-title--multiline { line-height: 18px; }
+
+/* Contenedor que posiciona el círculo dentro de la card */
+.eco-card-circle {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+/* Círculo con ANILLO + número */
+.score-circle {
+  --pct: 0;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Poppins", var(--font);
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+
+  /* Fondo compuesto: abajo el anillo, arriba el círculo negro */
+  background:
+    conic-gradient(
+      var(--grad-from, #63DFFF) calc(var(--pct) * 1turn),
+      rgba(0, 0, 0, 0) 0
+    ),
+    radial-gradient(circle at center, #050609 58%, transparent 60%);
+
+  box-shadow: 0 0 14px rgba(4, 145, 255, 0.55);
+}
+/* contenedor del anillo */
+.score-circle {
+  position: relative;
+  width: 72px;
+  height: 72px;
+  margin: 20px auto 12px;  
+}
+
+/* el canvas ocupa todo el contenedor */
+.score-circle canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* texto del porcentaje centrado dentro del anillo */
+.score-circle-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Poppins", var(--font);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+
+
+/* ============================
+   TOOLTIP
+   ============================ */
+#tooltip {
+  position: fixed; pointer-events: none; opacity: 0;
+  background: rgba(1,43,74,.95);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 13px;
+  max-width: 320px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.55);
+  transform: translate(-50%, -10px);
+  z-index: 100;
+}
+#tooltip .title { font-weight: 700; margin-bottom: 4px }
+#tooltip .kv { display:flex; justify-content:space-between; gap:12px }
+#tooltip .kv + .kv { margin-top: 3px }
+#tooltip hr {
+  border: none; border-top: 1px solid var(--stroke-soft); margin: 6px 0;
+}
+
+/* ============================
+   RANKING / GLOBAL INSIGHTS
+   ============================ */
+
+.insights-panel {
+  width: 540px !important;     
+  max-width: 450px;
+  margin-left: auto;
+  margin-top: 150px;
+}
+
+.insights-panel .panel-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.panel-title {
+  margin: 0;
+  font-family: "Poppins", var(--font);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.panel-chevron {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+}
+
+#ranking{
+  position: static;
+  width: 92% !important;      
+  max-width: 92%;
+  max-height: 450px;
+  padding: 4px 0 0;
+  font-size: 13px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+#ranking h3 {
+  display: none; 
+}
+
+#ranking-table { width: 100%; border-collapse: collapse }
+#ranking-table thead { display: none; }
+#ranking-table tbody {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* filas */
+.rank-item{
+  display: grid;
+  grid-template-columns: 20px 1fr 48px;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 6px;
+  border-radius: 10px;
+  transition: background .18s ease;
+  cursor: pointer;
+}
+.rank-item:hover{ background: rgba(255,255,255,.06) }
+.rank-item.active{
+  outline: 1px solid rgba(130,168,186,.8);
+  background: rgba(130,168,186,.10);
+}
+.rank-item .pos{
+  width: 20px; text-align: right; color: rgba(156,227,251,.9); font-weight: 600;
+}
+.rank-item .name{
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 600;
+}
+.rank-item .val{ text-align: right; color: rgba(156,227,251,.9) }
+.rank-item .bar{
+  grid-column: 1 / -1;
+  height: 6px; border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  overflow: hidden; margin-top: 4px;
+}
+.rank-item .bar > span{
+  display: block; height: 100%; border-radius: 999px;
+  background: linear-gradient(90deg, var(--grad-from), var(--grad-to));
+  box-shadow: 0 0 12px rgba(4, 109, 160, .35);
+  width: 0%; transition: width .35s ease;
+}
+
+/* ============================
+   ENVIRONMENTAL TRENDS (sin card)
+   ============================ */
+.side-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;  
+  gap: 18px;   
+}
+
+.trends-panel {
+  background: none;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
+  padding: 0;
+  width: 450px;
+  max-width: 450px;
+  margin-top: 140px;
+  margin-bottom: 40px;
+  margin-left: 0;
+}
+
+.trends-panel .panel-title {
+  font-size: 22px;
+}
+
+.trends-text {
+  margin: 8px 0 0;
+  font-family: "Lato", var(--font);
+  font-size: 16px;
+  line-height: 20px;
+}
+.trend-label {
+  font-weight: 700;
+}
+.trend-value {
+  font-weight: 400;
+}
+.trend-value--positive {
+  color: #67FF71;
+}
+
+/* ============================
+   LEYENDA / REFERENCIAS / BUSCADOR
+   ============================ */
+
+.legend-panel,
+#search-wrap,
+#legend,
+.references {
+  display: none !important;
+}
+
+/* ============================
+   SCROLLBARS
+   ============================ */
+
+*::-webkit-scrollbar        { width: 8px; height: 8px }
+*::-webkit-scrollbar-thumb  { background: rgba(130,168,186,.28); border-radius: 8px }
+*::-webkit-scrollbar-track  { background: transparent }
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+
+@media (max-width: 1180px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 24px;
+    padding: 0 24px 24px;
+  }
+
+  #overview,
+  #eco-formula {
+    grid-column: 1 / 2;
+  }
+
+  .side-panel {
+    grid-column: 1 / 2;
+    grid-row: auto;
+  }
+
+  #globe {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    width: 380px;
+    height: 380px;
+  }
+
+  .insights-panel {
+    max-width: none;
+  }
+}
+
+/* =========================
+   TABLET / DESKTOP NARROW (≤ 1180px)
+   ========================= */
+@media (max-width: 1180px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 24px;
+    padding: 0 24px 24px;
+  }
+
+  #overview,
+  #eco-formula {
+    grid-column: 1 / 2;
+  }
+
+  .side-panel {
+    grid-column: 1 / 2;
+    grid-row: auto;
+  }
+
+  #globe {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    width: 380px;
+    height: 380px;
+  }
+
+  .insights-panel {
+    max-width: none;
+  }
+}
+
+
+/* =========================
+   MOBILE (≤ 768px)
+   ========================= */
+@media (max-width: 768px) {
+
+  /* -------- 0) ESPACIO GENERAL -------- */
+  body {
+    padding-top: 0;
+    overflow: auto;
+  }
+
+  .layout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 8px;           
+  }
+
+  /* -------- 1) HEADER / NAV MOBILE -------- */
+
+  header,
+  .top-bar {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    height: 64px;
+    padding: 16px 24px 8px;    
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* marca a la izq, menú a la der */
+    backdrop-filter: none;
+  }
+
+  /* EARTHLY + subtítulo a la izquierda */
+  .top-bar__brand {
+    position: static;
+    transform: none;
+    text-align: left;
+    margin: 0;
+    pointer-events: auto;
+    flex: 0 1 auto;
+  }
+
+  .top-bar__brand .brand-title {
+    font-family: "Poppins", var(--font);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .top-bar__brand .brand-subtitle {
+    font-family: "Lato", var(--font);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 2px;
+  }
+
+  /* ocultar nav de escritorio y avatar en mobile */
+  .top-bar__nav,
+  .top-bar__user {
+    display: none;
+  }
+
+  /* hamburguesa a la derecha, redonda y dentro de pantalla */
+  .top-bar__burger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    margin-left: auto;           
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .top-bar__burger-line {
+    position: relative;
+    width: 18px;
+    height: 2px;
+    background: #000;
+  }
+
+  .top-bar__burger-line::before,
+  .top-bar__burger-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 2px;
+    background: #000;
+  }
+
+  .top-bar__burger-line::before { top: -6px; }
+  .top-bar__burger-line::after  { top:  6px; }
+
+
+  /* -------- 2) MENÚ LATERAL MOBILE -------- */
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vw;              
+    max-width: 320px;         
+    height: 100vh;
+    background: #05080f;      
+    transform: translateX(100%);
+    transition: transform .25s ease;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-menu.is-open {
+    transform: translateX(0);
+  }
+
+  .mobile-menu__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 20px;
+    margin-bottom: 24px;
+  }
+
+  .mobile-menu__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .mobile-menu__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* botón hamburguesa dentro del panel (mismo estilo general) */
+  .mobile-menu__burger {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1.5px solid #fff;
+    background: #fff;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  /* reutilizamos la misma “triple línea” */
+  .mobile-menu__burger .top-bar__burger-line,
+  .mobile-menu__burger .top-bar__burger-line::before,
+  .mobile-menu__burger .top-bar__burger-line::after {
+    background: #000;
+  }
+
+  .mobile-menu__list {
+    list-style: none;
+    margin: 0;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-family: "Lato", var(--font);
+    font-size: 20px;
+  }
+
+  .mobile-menu__list a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* -------- 3) HERO: FLECHA + TÍTULO -------- */
+
+  #overview {
+    margin-top: 30px;
+    order: 1;
+  }
+
+  .overview-header {
+    display: flex;
+    align-items: flex-start;  
+    gap: 12px;
+    padding: 0 24px;
+  }
+
+  /* botón de volver con círculo perfectamente redondo */
+  .overview-back {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1.5px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin-top: 2px;          
+  }
+
+  .overview-text .overview-title {
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 0 0 4px;
+  }
+
+  .overview-text .overview-subtitle {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+
+  /* -------- 4) GLOBO + PROCESS SUMMARY -------- */
+
+  #globe.globe-panel {
+    order: 2;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 260px;
+    height: 260px;
+    max-width: 80vw;
+    max-height: 80vw;
+    margin: 24px auto 12px;
+    z-index: 0;
+  }
+
+  .process-summary {
+    order: 3;
+    font-size: 13px;
+    line-height: 1.4;
+    max-width: 90vw;
+    margin: 0 auto 16px;
+  }
+
+
+  /* -------- 5) GLOBAL INSIGHTS + TRENDS -------- */
+
+  .side-panel {  
+    order: 4;           
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .insights-panel {
+    width: calc(100% - 8px) !important;
+    max-width: 400px !important;
+    margin: 0 auto !important;   /* CENTRADO real */
+    padding: 14px 16px 16px;
+  }
+
+  #ranking {
+    width: 100%;
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .rank-item {
+    padding: 5px 8px;
+    gap: 6px;
+  }
+
+  .trends-panel {
+    width: calc(100% - 32px);
+    max-width: 360px;
+    margin: 0 auto 32px;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .trends-panel .panel-title {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .trends-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+
+  /* -------- 6) ECO SCORE FORMULA (2x2) -------- */
+
+  #eco-formula {
+    order: 5;
+    margin-top: 12px;
+    align-items: center;
+  }
+
+  .eco-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .eco-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 14px 10px 72px;   /* espacio extra para el anillo abajo */
+    border-radius: 16px;
+    min-height: 210px;     
+    bottom: 30px;    /* evita que se aplasten */
+  }
+
+  .eco-card-pill {
+    margin: 0;
+  }
+
+  .eco-card-title {
+    margin: 6px 0 0;          /* justo debajo del pill */
+    font-size: 15px;
+  }
+
+  .eco-card-circle {
+    position: absolute;
+    left: 50%;
+    bottom: 36px;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    aspect-ratio: 1 / 1;      
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-width: 3px;
+  }
+
+  .eco-card-circle::before {
+    border-width: 3px;
+    border-radius: inherit;
+  }
+
+  .eco-card-circle span {
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  /* título "ECO SCORE FORMULA" */
+  #eco-formula h2,
+  #eco-formula .panel-title {
+    margin-top: 0;          
+    margin-bottom: 45px;   
+  }
+
+}
+
+/* AJUSTES FINALES MOBILE */
+@media (max-width: 768px) {
+
+  /* 1) ECO TRAVEL + FLECHA MÁS A LA IZQUIERDA */
+  .overview-header {
+    padding-left: 0px;     
+    padding-right: 0px;
+  }
+
+  /* que todo el bloque se alinee a la izquierda como el resto */
+  .overview-text {
+    margin-right: auto;
+  }
+
+  /* 2) FLECHA CENTRADA DENTRO DEL CÍRCULO */
+  .overview-back {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border-radius: 50%;
+    border: 1.5px solid #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/* --- flecha SVG centrada --- */
+.overview-back-icon {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.overview-back-icon polyline {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+  /* 3) GLOBAL INSIGHTS → CUADRO INTERNO CENTRADO */
+  #ranking {
+    margin: 0;              
+    width: 100%;
+    box-sizing: border-box; 
+  }
+
+  /* 4) ECO SCORE FORMULA CENTRADO EN LA PANTALLA */
+  #eco-formula {
+    width: 100%;
+    max-width: 420px;       
+    margin: 12px auto 32px; 
+    padding: 0 16px;        
+    box-sizing: border-box;
+  }
+
+  .eco-cards {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+/* AJUSTE GLOBAL INSIGHTS (mobile) */
+@media (max-width: 768px) {
+
+  /* padding simétrico dentro del borde celeste */
+  .insights-panel {
+    padding: 16px 18px !important;   /* mismo espacio a izquierda y derecha */
+    box-sizing: border-box;
+  }
+
+  /* cuadro gris de ranking centrado dentro del panel */
+  .insights-panel #ranking {
+    position: static !important;
+    width: 100% !important;
+    margin: 8px 0 0 0 !important;   
+    box-sizing: border-box;
+  }
+}
+@media (max-width: 768px) {
+
+  /* outer card: borde celeste, padding simétrico */
+  .side-panel .insights-panel {
+    padding: 8px 8px !important;
+    box-sizing: border-box;
+  }
+
+  /* cuadro gris interno (ranking) centrado dentro del panel */
+  .side-panel .insights-panel #ranking {
+    width: 100% !important;
+    margin: 0px auto 0 auto !important;
+    box-sizing: border-box;
+  }
+}
+
