@@ -36,13 +36,18 @@
 }
 
 /* -------------------- Base -------------------- */
-html,
-body {
-  height: 100%;
+html {
   margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: var(--gutter);
   font-family: var(--font);
   color: var(--text);
   background: transparent;
+  min-height: 100vh;
+  box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -134,17 +139,18 @@ body {
 
 .top-bar__brand .brand-title {
   font-family: "Poppins", var(--font);
-  font-size: 32px;
-  font-weight: 800;
+  font-size: 28px;
+  font-weight: 600;
   margin: 0;
   color: #fff;
+  margin-bottom: -2px;
 }
 
 .top-bar__brand .brand-subtitle {
   font-family: "Lato", var(--font);
   font-size: 18px;
   font-weight: 400;
-  margin: 2px 0 0;
+  margin: 0px 0 0;
   color: #fff;
 }
 
@@ -230,9 +236,9 @@ body {
 .layout {
   position: relative;
   max-width: 1800px;
-  height: calc(100vh - (var(--gutter) * 2) - 72px);
-  margin: calc(var(--gutter) + 72px + 24px) auto var(--gutter);
-  padding: 0 0 32px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 32px;
   display: grid;
   grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.1fr);
   grid-template-rows: auto auto auto;
@@ -292,7 +298,7 @@ body {
   padding: 0;
 }
 .overview {
-  margin-top: 100px;
+  margin-top: 140px;
 }
 
 /* Título + subtítulo (desktop y mobile, responsive con clamp) */
@@ -301,14 +307,15 @@ body {
   text-align: left;
   color: #fff;
   font-family: "Poppins", var(--font);
-  font-size: clamp(24px, 2.3vw, 36px);
+  font-size: clamp(24px, 2.3vw, 28px);
   font-weight: 600;
+  margin-bottom: 0px;
 }
 .overview-subtitle {
   margin: 0 0 24px;
   color: #fff;
   font-family: "Lato", var(--font);
-  font-size: clamp(14px, 1.3vw, 24px);
+  font-size: clamp(14px, 1.3vw, 20px);
   font-weight: 400;
 }
 
@@ -321,16 +328,16 @@ body {
   text-transform: uppercase;
   color: #fff;
   font-family: "Lato", var(--font);
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
 }
 .process-text {
   margin: 0;
   color: #fff;
   font-family: "Lato", var(--font);
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 26px;
 }
 
 .hero-header {
@@ -405,7 +412,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   font-family: "Lato", var(--font);
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
 }
 
@@ -436,7 +443,7 @@ body {
   box-shadow:
     0 18px 26px rgba(0, 0, 0, 0.55),
     0 0 0 1px rgba(255, 255, 255, 0.05) inset;
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .eco-card-pill {
@@ -547,7 +554,7 @@ body {
   max-width: 455.4px;
   height: 187px;
   margin-right: 60px;
-  margin-top: 78px;
+  margin-top: 120px;
   margin-bottom: 200px;
 
   /* quitar “card” exterior (sin fondo, sin borde, sin blur) */
@@ -559,7 +566,8 @@ body {
 }
 
 .panel-title {
-  font-size: 28px;
+  font-size: 22px;
+  font-weight: 700;
 }
 .insights-panel .panel-header-row {
   margin-bottom: 20px;
@@ -610,18 +618,20 @@ body {
 .rank-item .pos {
   width: 20px;
   text-align: right;
-  color: rgba(156, 227, 251, 0.9);
+  color: white;
   font-weight: 600;
+  font-family: "Lato", var(--font);
 }
 .rank-item .name {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 600;
+  font-size: 15px;
 }
 .rank-item .val {
   text-align: right;
-  color: rgba(156, 227, 251, 0.9);
+  color: white;
 }
 .rank-item .bar {
   grid-column: 1 / -1;
@@ -650,7 +660,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
   gap: 18px;
-  
+  margin-right: -25px;
 }
 
 .trends-panel {
@@ -661,19 +671,20 @@ body {
   padding: 0;
   width: 450px;
   max-width: 450px;
-  margin-top: 80px;
+  margin-top: 32px;
   margin-bottom: 40px;
   margin-left: 0;
   margin-right: 60px;
 }
 .trends-panel .panel-title {
-  font-size: 28px;
+  font-size: 22px;
+  font-weight: 700;
 }
 .trends-text {
   margin: 8px 0 0;
   font-family: "Lato", var(--font);
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 26px;
 }
 .trend-label {
   font-weight: 700;
@@ -724,7 +735,6 @@ body {
     row-gap: 24px;
     padding: 0 24px 24px;
     height: auto;
-    margin: calc(var(--gutter) + 72px + 24px) auto var(--gutter);
   }
 
   #overview,
@@ -756,22 +766,27 @@ body {
    MOBILE (≤ 768px)
    ========================= */
 @media (max-width: 768px) {
-  /* 0) ESPACIO GENERAL */
+
+  /* MARCO GLOBAL */
   body {
-    padding-top: 0;
-    overflow: auto;
+    padding: 60px 20px;
+    min-height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
+  /* LAYOUT GENERAL */
   .layout {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-top: 8px;
-    padding: 0 24px 24px;
+    margin: 0;
+    padding: 0;
     height: auto;
   }
 
-  /* 1) HEADER / NAV MOBILE */
+  /* HEADER / NAV MOBILE */
   header,
   .top-bar {
     position: static;
@@ -780,9 +795,9 @@ body {
     right: auto;
     width: 100%;
     max-width: 100%;
-    margin: 0;
-    height: 64px;
-    padding: 16px 24px 8px;
+    margin: 0 0 8px 0;
+    height: 48px;
+    padding: 0;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -816,13 +831,13 @@ body {
     display: none;
   }
 
-  /* hamburguesa a la derecha */
+  /* hamburguesa */
   .top-bar__burger {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 38px;
-    height: 38px;
+    width: 50px;
+    height: 50px;
     padding: 0;
     margin-left: auto;
     border-radius: 50%;
@@ -833,7 +848,7 @@ body {
   }
   .top-bar__burger-line {
     position: relative;
-    width: 18px;
+    width: 16px;
     height: 2px;
     background: #000;
   }
@@ -842,23 +857,23 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    width: 18px;
+    width: 16px;
     height: 2px;
     background: #000;
   }
   .top-bar__burger-line::before {
-    top: -6px;
+    top: -5px;
   }
   .top-bar__burger-line::after {
-    top: 6px;
+    top: 5px;
   }
 
-  /* 2) MENÚ LATERAL MOBILE */
+  /* MENÚ LATERAL MOBILE */
   .mobile-menu {
     position: fixed;
     top: 0;
     right: 0;
-    width: 50vw;
+    width: 60vw;
     max-width: 320px;
     height: 100vh;
     background: #05080f;
@@ -911,17 +926,37 @@ body {
     flex-direction: column;
     gap: 24px;
     font-family: "Lato", var(--font);
-    font-size: 20px;
+    font-size: 18px;
   }
   .mobile-menu__list a {
     color: #fff;
     text-decoration: none;
   }
 
-  /* 3) HERO: FLECHA + TÍTULO */
+  /* OVERVIEW / HERO */
   #overview {
-    margin-top: 30px;
     order: 1;
+    margin-top: 40px; 
+    text-align: center;  /* probá 40, 50, 60 hasta que te guste */
+  }
+
+  .overview {
+    margin-top: 0;      /* o directamente podés borrar esta regla */
+  }
+
+  .overview-title {
+    font-size: 24px;
+    margin-bottom: 4px;
+    text-align: center;
+    margin-left: 65px;
+    margin-right: auto;
+  }
+
+  .overview-subtitle {
+    font-size: 16px;
+    margin-bottom: 12px;
+    text-align: center;
+    max-width: 360px;     /* para que no quede demasiado ancho */ /* centrado con margen arriba/abajo */  
   }
 
   .overview-header {
@@ -935,8 +970,8 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
     padding: 0;
     border-radius: 50%;
     border: 1.5px solid #fff;
@@ -950,52 +985,61 @@ body {
     margin-right: auto;
   }
 
-  /* mantenemos los tamaños heredados del clamp */
-  .overview-text .overview-title {
-    margin: 0 0 4px;
-  }
-  .overview-text .overview-subtitle {
-    margin: 0;
-  }
-
-  /* 4) GLOBO + PROCESS SUMMARY */
-  #globe.globe-panel {
+  /* GLOBO */
+  #globe {
     order: 2;
     position: relative;
     top: auto;
     left: auto;
     transform: none;
-    width: 260px;
-    height: 260px;
+    width: 360px;
+    height: 360px;
     max-width: 80vw;
     max-height: 80vw;
     margin: 24px auto 12px;
     z-index: 0;
   }
 
+  /* PROCESS SUMMARY */
   .process-summary {
     order: 3;
-    font-size: 13px;
+    font-size: 18px;
     line-height: 1.4;
-    max-width: 90vw;
-    margin: 0 auto 16px;
+    max-width: 100%;
+    margin: 0 0 16px 0;
+    margin-top: 40px ;
   }
 
-  /* 5) GLOBAL INSIGHTS + TRENDS */
+  .process-title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .process-text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  /* GLOBAL INSIGHTS + TRENDS */
   .side-panel {
     order: 4;
     margin-top: 8px;
+    margin-right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
 
+  .panel-title {
+  font-size: 20px;
+  font-weight: 700;
+  }
+
   .insights-panel {
-    width: calc(100% - 8px) !important;
+    width: 100% !important;
     max-width: 400px !important;
     margin: 0 auto !important;
-    padding: 16px 18px !important;
+    padding: 0 !important;
     box-sizing: border-box;
   }
 
@@ -1012,7 +1056,7 @@ body {
   }
 
   .trends-panel {
-    width: calc(100% - 32px);
+    width: 100%;
     max-width: 360px;
     margin: 0 auto 32px;
     padding: 0;
@@ -1020,27 +1064,35 @@ body {
     border: none;
     box-shadow: none;
     backdrop-filter: none;
+    margin-top: 150px;
   }
 
   .trends-panel .panel-title {
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
+    font-weight: 700;
   }
 
   .trends-text {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 25px;
   }
 
-  /* 6) ECO SCORE FORMULA (2x2) */
+  /* ECO SCORE FORMULA */
   #eco-formula {
     order: 5;
     width: 100%;
     max-width: 420px;
-    margin: 12px auto 32px;
+    margin: 12px auto 0;
     align-items: center;
-    padding: 0 16px;
+    padding: 0;
     box-sizing: border-box;
+  }
+
+  .eco-formula-title {
+    font-size: 20px;
+    text-align: left;
+    font-weight: 700;
   }
 
   .eco-cards {
@@ -1048,7 +1100,7 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
     width: 100%;
-    margin: 0 auto;
+    margin: 16px 0 0 0;
   }
 
   .eco-card {
@@ -1059,10 +1111,15 @@ body {
     padding: 14px 10px 72px;
     border-radius: 16px;
     min-height: 210px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
   }
 
   .eco-card-pill {
     margin: 0;
+    height: 18px;
+    margin-bottom: 10px;
   }
 
   .eco-card-title {
@@ -1091,10 +1148,9 @@ body {
     line-height: 1;
   }
 
-  /* título "ECO SCORE FORMULA" un poco separado */
   #eco-formula h2,
   #eco-formula .panel-title {
     margin-top: 0;
-    margin-bottom: 45px;
+    margin-bottom: 24px;
   }
 }
