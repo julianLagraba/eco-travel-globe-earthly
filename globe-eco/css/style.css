@@ -575,7 +575,6 @@ body {
 
 #ranking {
   position: static;
-  /* ahora ocupa TODO el ancho de insights-panel */
   width: 100%;
   max-width: 100%;
   max-height: 450px;
@@ -872,9 +871,9 @@ body {
  /* --- HAMBURGUESA: siempre en la misma posición --- */
   .top-bar__burger {
     position: fixed;
-    top: 60px;      /* mismo margen superior que el padding del body */
-    right: 20px;    /* mismo margen lateral */
-    z-index: 1100;  /* por encima del panel del menú */
+    top: 60px;      
+    right: 20px;    
+    z-index: 1100;  
   }
 
   /* ocultamos la hamburguesa “interna” del panel, ya no la necesitamos */
@@ -887,18 +886,19 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    width: 60vw;            /* ancho del panel (ajusta a gusto) */
+    width: 60vw;            
     max-width: 360px;
     height: 100vh;
-    background: #000;       /* fondo negro */
+    background: #000;       
     transform: translateX(100%);
     transition: transform 0.25s ease;
     z-index: 1000;
     display: flex;
     flex-direction: column;
+    overflow: hidden; 
 
     /* 🔹 marco interno igual que el de la página */
-    padding: 60px 20px 24px;  /* top 60, laterales 20, abajo 24 */
+    padding: 60px 20px 24px;  
     box-sizing: border-box;
   }
 
@@ -910,7 +910,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 32px;        /* misma altura que el círculo de la hamburguesa */
+    height: 32px;        
     padding: 0;
     margin-bottom: 32px;
   }
@@ -921,8 +921,8 @@ body {
     height: 32px;
     display: flex;
     align-items: center;
-    border-radius: 0;    /* <-- quitamos el círculo heredado */
-    overflow: visible;   /* que no recorte el texto */
+    border-radius: 0;    
+    overflow: visible;   
   }
 
   .mobile-menu__avatar img {
@@ -938,19 +938,20 @@ body {
     color: #fff;
     line-height: 32px;
     margin-top: 33px;
-    padding: 0 10px 15px;   /* lo centra verticalmente en la fila de 32px */
+    padding: 0 10px 15px;  
   }
 
   /* --- Lista de links un poco más abajo --- */
   .mobile-menu__list {
     list-style: none;
-    margin: 32px 0 0;     /* los baja un poco */
     padding: 0 10px 15px;
     display: flex;
     flex-direction: column;
     gap: 24px;
     font-family: "Lato", var(--font);
     font-size: 18px;
+    flex: 0;                     
+    overflow: visible; 
   }
   .mobile-menu__list a {
     color: #fff;
@@ -959,7 +960,7 @@ body {
 
 /* Botón de logout al fondo del panel */
   .mobile-menu__logout {
-    margin-top: auto;                 /* lo empuja al fondo del panel */
+    margin-top: auto;                 
     padding: 0 10px 15px;
     border: none;
     background: none;
@@ -978,7 +979,6 @@ body {
     height: 24px;
   }
 
-  /* el panel ya es fixed y 100vh, solo reforzamos flex column */
   .mobile-menu {
     display: flex;
     flex-direction: column;
@@ -987,10 +987,10 @@ body {
 
   /* la lista ocupa el espacio central y es la que scrollea */
   .mobile-menu__list {
-    flex: 1;                      /* toma todo el espacio disponible */
-    overflow-y: auto;             /* solo la lista scrollea */
+    flex: 1;                      
+    overflow-y: auto;            
     margin: 32px 0 0;
-    padding: 0 24px 24px;
+    padding: 0 10px 15px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -1000,7 +1000,7 @@ body {
 
   /* logout pegado al fondo, siempre visible */
   .mobile-menu__logout {
-    margin-top: 0;                /* ya no empujamos con auto */
+    margin-top: 0;                
     padding: 0 10px 15px;
     border: none;
     background: none;
@@ -1025,11 +1025,11 @@ body {
   #overview {
     order: 1;
     margin-top: 40px; 
-    text-align: center;  /* probá 40, 50, 60 hasta que te guste */
+    text-align: center;  
   }
 
   .overview {
-    margin-top: 0;      /* o directamente podés borrar esta regla */
+    margin-top: 0;      
   }
 
   .overview-title {
@@ -1044,13 +1044,13 @@ body {
     margin-bottom: 12px;
     text-align: center;
     max-width: 360px; 
-    margin: 0 auto;    /* para que no quede demasiado ancho */ /* centrado con margen arriba/abajo */  
+    margin: 0 auto;     
   }
 
   .overview-header {
     display: flex;
-    flex-direction: column;   /* uno debajo del otro */
-    align-items: center;      /* centra horizontalmente todo */
+    flex-direction: column;   
+    align-items: center;      
     gap: 12px;
     padding: 0;
   }
@@ -1071,7 +1071,7 @@ body {
   }
 
   .overview-text {
-    margin: 0;                /* quitamos margin-right: auto */
+    margin: 0;                
     width: 100%;
     text-align: center;  
   }
