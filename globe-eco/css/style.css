@@ -45,7 +45,7 @@ body {
   padding: var(--gutter);
   font-family: var(--font);
   color: var(--text);
-  background: transparent;
+  background-color: #000;;
   min-height: 100vh;
   box-sizing: border-box;
   overflow: hidden;
@@ -774,6 +774,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     box-sizing: border-box;
+    background-color: #000;
   }
 
   /* LAYOUT GENERAL */
@@ -868,21 +869,39 @@ body {
     top: 5px;
   }
 
-  /* MENÚ LATERAL MOBILE */
+ /* --- HAMBURGUESA: siempre en la misma posición --- */
+  .top-bar__burger {
+    position: fixed;
+    top: 60px;      /* mismo margen superior que el padding del body */
+    right: 20px;    /* mismo margen lateral */
+    z-index: 1100;  /* por encima del panel del menú */
+  }
+
+  /* ocultamos la hamburguesa “interna” del panel, ya no la necesitamos */
+  .mobile-menu__burger {
+    display: none;
+  }
+
+  /* --- PANEL DEL MENÚ LATERAL --- */
   .mobile-menu {
     position: fixed;
     top: 0;
     right: 0;
-    width: 60vw;
-    max-width: 320px;
+    width: 60vw;            /* ancho del panel (ajusta a gusto) */
+    max-width: 360px;
     height: 100vh;
-    background: #05080f;
+    background: #000;       /* fondo negro */
     transform: translateX(100%);
     transition: transform 0.25s ease;
-    z-index: 999;
+    z-index: 1000;
     display: flex;
     flex-direction: column;
+
+    /* 🔹 marco interno igual que el de la página */
+    padding: 60px 20px 24px;  /* top 60, laterales 20, abajo 24 */
+    box-sizing: border-box;
   }
+
   .mobile-menu.is-open {
     transform: translateX(0);
   }
@@ -891,37 +910,42 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 20px;
-    margin-bottom: 24px;
-  }
-
-  .mobile-menu__avatar {
-    width: 40px;
-    height: 40px;
-  }
-
-  .mobile-menu__burger {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    border: 1.5px solid #fff;
-    background: #fff;
+    height: 32px;        /* misma altura que el círculo de la hamburguesa */
     padding: 0;
-    cursor: pointer;
-  }
-  .mobile-menu__burger .top-bar__burger-line,
-  .mobile-menu__burger .top-bar__burger-line::before,
-  .mobile-menu__burger .top-bar__burger-line::after {
-    background: #000;
+    margin-bottom: 32px;
   }
 
+  /* contenedor del texto MENÚ: quitar círculo y centrarlo */
+  .mobile-menu__avatar {
+    width: auto;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border-radius: 0;    /* <-- quitamos el círculo heredado */
+    overflow: visible;   /* que no recorte el texto */
+  }
+
+  .mobile-menu__avatar img {
+    display: none;       /* ocultar foto */
+  }
+
+  .mobile-menu__avatar::before {
+    content: "MENÚ";
+    font-family: "Poppins", var(--font);
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: #fff;
+    line-height: 32px;
+    margin-top: 33px;
+    padding: 0 10px 15px;   /* lo centra verticalmente en la fila de 32px */
+  }
+
+  /* --- Lista de links un poco más abajo --- */
   .mobile-menu__list {
     list-style: none;
-    margin: 0;
-    padding: 0 24px;
+    margin: 32px 0 0;     /* los baja un poco */
+    padding: 0 10px 15px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -931,6 +955,27 @@ body {
   .mobile-menu__list a {
     color: #fff;
     text-decoration: none;
+  }
+
+/* Botón de logout al fondo del panel */
+  .mobile-menu__logout {
+    margin-top: auto;                 /* lo empuja al fondo del panel */
+    padding: 0 10px 15px;
+    border: none;
+    background: none;
+    display: flex;       
+    gap: 8px;
+    font-family: "Lato", var(--font);
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Icono SVG del logout */
+  .mobile-menu__logout-icon svg {
+    display: block;
+    width: 24px;
+    height: 24px;
   }
 
   /* OVERVIEW / HERO */
@@ -945,23 +990,24 @@ body {
   }
 
   .overview-title {
-    font-size: 24px;
-    margin-bottom: 4px;
+    font-size: 28px;
+    margin-bottom: 0px;
     text-align: center;
-    margin-left: 65px;
-    margin-right: auto;
+    margin: 0 auto 0px;
   }
 
   .overview-subtitle {
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 12px;
     text-align: center;
-    max-width: 360px;     /* para que no quede demasiado ancho */ /* centrado con margen arriba/abajo */  
+    max-width: 360px; 
+    margin: 0 auto;    /* para que no quede demasiado ancho */ /* centrado con margen arriba/abajo */  
   }
 
   .overview-header {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;   /* uno debajo del otro */
+    align-items: center;      /* centra horizontalmente todo */
     gap: 12px;
     padding: 0;
   }
@@ -982,7 +1028,9 @@ body {
   }
 
   .overview-text {
-    margin-right: auto;
+    margin: 0;                /* quitamos margin-right: auto */
+    width: 100%;
+    text-align: center;  
   }
 
   /* GLOBO */
