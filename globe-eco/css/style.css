@@ -978,6 +978,49 @@ body {
     height: 24px;
   }
 
+  /* el panel ya es fixed y 100vh, solo reforzamos flex column */
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  /* la lista ocupa el espacio central y es la que scrollea */
+  .mobile-menu__list {
+    flex: 1;                      /* toma todo el espacio disponible */
+    overflow-y: auto;             /* solo la lista scrollea */
+    margin: 32px 0 0;
+    padding: 0 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-family: "Lato", var(--font);
+    font-size: 18px;
+  }
+
+  /* logout pegado al fondo, siempre visible */
+  .mobile-menu__logout {
+    margin-top: 0;                /* ya no empujamos con auto */
+    padding: 0 10px 15px;
+    border: none;
+    background: none;
+    display: flex;
+    gap: 8px;
+    font-family: "Lato", var(--font);
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .mobile-menu__logout-icon svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  .mobile-menu__list li:last-child {
+    display: none;
+  }
   /* OVERVIEW / HERO */
   #overview {
     order: 1;
