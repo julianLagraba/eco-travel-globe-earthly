@@ -870,7 +870,7 @@ body {
 
  /* --- HAMBURGUESA: siempre en la misma posición --- */
   .top-bar__burger {
-    position: fixed;
+    position: static;
     top: 60px;      
     right: 20px;    
     z-index: 1100;  
